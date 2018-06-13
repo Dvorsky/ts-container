@@ -11,7 +11,9 @@
     "sourceRoot": "src",
     /* Specify the location where debugger should locate TypeScript files instead of source locations. */
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "declaration": true
   },
   "include": [
     "./src/**/*.ts"
