@@ -1,0 +1,37 @@
+{
+  "name": "ts-container",
+  "version": "0.1.0",
+  "description": "Service Container written in TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run generate-barrels",
+    "generate-barrels": "barrelsby --directory src/ --delete --include src/ --exclude errors/",
+    "test": "npm run tslint & npm run mocha",
+    "tslint": "tslint --project tsconfig.json --format stylish",
+    "travis:test": "npm run build && npm run test",
+    "premocha": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dvorsky/ts-container.git"
+  },
+  "devDependencies": {
+    "@degordian/standards": "^1.0.8",
+    "@degordian/testing-toolkit": "^1.0.17",
+    "mocha-typescript": "^1.1.16",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.1"
+  },
+  "keywords": [
+    "container",
+    "typescript",
+    "service"
+  ],
+  "author": "Dvorsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dvorsky/ts-container/issues"
+  },
+  "homepage": "https://github.com/Dvorsky/ts-container#readme"
+}
