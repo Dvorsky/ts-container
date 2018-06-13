@@ -3,9 +3,6 @@
   "compilerOptions": {
     "skipLibCheck": true,
     "outDir": "dist",
-    /* Redirect output structure to the directory. */
-    "rootDir": "./",
-    /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     "typeRoots": [
       "node_modules/@types",
       "src/types"
@@ -13,11 +10,12 @@
     /* List of folders to include type definitions from. */
     "sourceRoot": "src",
     /* Specify the location where debugger should locate TypeScript files instead of source locations. */
-    "experimentalDecorators": true,
-    "declaration": true
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
   "include": [
     "./src/**/*.ts"
+    //"./test/**/*.ts"
   ],
   "exclude": [
     "node_modules"
